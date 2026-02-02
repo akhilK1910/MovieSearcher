@@ -8,6 +8,6 @@ export class HttpserviceService {
 
   constructor(private http:HttpClient) { }
   getList(){
-    this.http.get<any>("http://www.omdbapi.com/?apikey=52bd3b76&s=Deadpool&page=1&type=movie")
+    return this.http.get<any>("http://www.omdbapi.com/?apikey=52bd3b76&s=Deadpool&page=1&type=movie");
   }
 }

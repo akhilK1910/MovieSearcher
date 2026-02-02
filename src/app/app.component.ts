@@ -1,3 +1,4 @@
+import { HttpserviceService } from './httpservice.service';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -9,4 +10,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'MovieSearcher';
+  data:any;
+  constructor(private http:HttpserviceService){
+    this.http.getList().subscribe({
+      next:(res)=>{
+        console.log(res)
+      }, error:(error)=>{
+        console.error(error)
+      }
+  });
+  }
 }
