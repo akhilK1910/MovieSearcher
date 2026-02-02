@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MovieSearcher
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
@@ -57,3 +58,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+"# MovieSearcher" 
+>>>>>>> ca5e7c5758f2c3aa1372919643b1727770c33a50
