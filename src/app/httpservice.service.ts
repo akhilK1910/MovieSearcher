@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class HttpserviceService {
 
   constructor(private http:HttpClient) { }
-  getList(){
-    return this.http.get<any>("http://www.omdbapi.com/?apikey=52bd3b76&s=Deadpool&page=1&type=movie");
+  getList(searchString:String){
+    return this.http.get<any>(`http://www.omdbapi.com/?apikey=52bd3b76&s=${searchString}&page=1&type=movie`);
   }
 }
